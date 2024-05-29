@@ -205,7 +205,7 @@
     left: calc(57% - 50px);
     width: 46%;
     height: 63%;
-    background-color: #0084ff26;
+    background-color: #0084ff30;
     box-shadow: 0px 1px 200px 92px #0084ff38;
     border-radius: 26%;
 }
@@ -216,8 +216,8 @@
     left: calc(24% - 50px);
     width: 49%;
     height: 57%;
-    background-color: #ff00002e;
-    box-shadow: 0px 1px 200px 92px #ff000040;
+    background-color: #ff000030;
+    box-shadow: 0px 1px 200px 92px #ff000048;
     border-radius: 26%;
 }
 
@@ -435,9 +435,6 @@
     overflow: auto;
     height: 92%;
     padding: 0 10px;
-    text-align: justify;
-    line-height: 1.2;
-    word-spacing: -1px;
 }
 
 .talleristas-main-section-ul-li-p span{
@@ -451,7 +448,7 @@
     left: calc(65% - 50px);
     width: 34%;
     height: 40%;
-    background-color: #0084ff26;
+    background-color: #0084ff29;
     box-shadow: 0px 1px 200px 92px #0084ff38;
     border-radius: 26%;
 }
@@ -462,8 +459,8 @@
     left: calc(5% - 50px);
     width: 34%;
     height: 40%;
-    background-color: #ff00001a;
-    box-shadow: 0px 1px 200px 92px #ff000021;
+    background-color: #ff000036;
+    box-shadow: 0px 1px 200px 92px #ff000048;
     border-radius: 26%;
 }
 
