@@ -1,0 +1,342 @@
+
+
+
+
+.logo img{
+    width: 98px;
+}
+
+
+.light-mode-img-logo{
+    display: var(--logo-display-light-mode);
+}
+.dark-mode-img-logo{
+    display: var(--logo-display-dark-mode);
+}
+
+
+a:hover{
+    color: orange;
+}
+
+/*  HEADER  */
+
+header{
+    width: 100vw;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.navbar{
+    background-color: var(--theme-color);
+    width: 90%;
+    height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: var(--navbar-box-shadow);
+  /*  border-width: 0px 2px 2px;
+    border-style: solid;
+    border-color: #141a3c;
+    border-radius: 0px 0px 10px 10px;*/
+    border: var(--navbar-border);
+    border-bottom: var(--navbar-border-bottom);
+    border-radius: var(--navbar-border-radius);
+
+  
+
+
+
+}
+
+.navbar .logo{
+    width: 156px;
+    display: flex;
+    align-items: center;
+}
+
+.logo p{
+    display: block;
+    color: var(--text-color);
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.navbar .menu, .navbar .action_btn{
+    display: none;
+}
+
+
+.navbar .toggle_btn{
+    display: flex;
+    align-items: center;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.toggle-dark-light-mode-button{
+    all: unset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.dark-light-mode-icon{
+    width: 30px;
+}
+/*
+.toggle-darl-light-button:hover{
+
+}
+*/
+
+/* DROPDOWN MENU */
+
+.dropdown_menu{
+
+    position: absolute;
+    left: 2rem;
+    right: 2rem;
+    top: 104px;
+    width: unset;
+    height: 0;
+    background-color: var(--menu-mobile-background-color);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 1rem;
+}
+
+.dropdown_menu a {
+    color: var(--text-color-inverse);
+}
+
+.dropdown_menu.openMenu{
+    height: 202px;
+    padding: 0 1em 1.6em 1em;
+}
+
+.open{
+    display: block;
+}
+.close{
+    display: none;
+}
+
+.dropdown_menu li{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-width: 0 0 1px 0;
+    border-color: var(--text-color-inverse);
+    border-style: solid;
+    width: 50%;
+}
+
+
+.congreso-li{
+    position: relative;
+}
+
+
+.menu li a{
+    position: relative;
+}
+
+
+
+.dropdown_menu_congreso{
+    display: none;
+}
+
+
+
+.dropdown_menu li a:hover,
+.dropdown_menu li a.selected{
+    color: var(--secondary-color);
+}
+
+
+
+
+.navbar .toggle_btn img{
+    width: 2rem;
+}
+
+
+.navbar .toggle_btn svg{
+    color: var(--toggle-menu-color);
+}
+
+/* RESPONSIVE DESIGN*/
+
+@media(min-width:400px){
+    header{
+        height: 138px;
+    }
+
+    .dropdown_menu{
+        top: 144px;
+    }
+}
+
+
+
+
+@media(min-width:950px){
+    header{
+        height: 138px;
+    }
+
+
+    .navbar .menu, .navbar .action_btn{
+        display: block;
+    }
+
+    .navbar .menu{
+        display: flex;
+        height: 100%;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    .navbar .menu li{
+        position: relative;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+
+    .menu li a::after{
+        content: '';
+        background-color: var(--secondary-color);
+        position: absolute;
+        left: 0 ;
+        top: calc(100% + 4px);
+        width: 100%;
+        height: 4px;
+    
+        opacity: 0;
+        transition: opacity 0.3s;
+    
+    }
+    
+    .menu li a.selected::after,
+    .menu li a:hover::after {
+        opacity: 0.8;    
+    }
+    
+  
+
+  /*  .menu li a:hover,
+    .menu li a.selected{
+    color: unset;
+    }*/
+    
+/*
+    .action_btn{
+        background-color: orange;
+        color: #fff;
+        padding: 0.5rem 1rem;
+        border: none;
+        outline: none;
+        border-radius: 20px;
+        font-size: 0.8rem;
+        font-weight: bold;
+        cursor: pointer;
+        transition: scale 0.2 ease;
+    
+    
+    }
+    
+    .action_btn:hover{
+        scale: 1.05;
+        color: #fff;
+    }
+    
+    .action_btn:active{
+        scale: 0.95;
+    }
+*/
+    .navbar .toggle_btn{
+        cursor: pointer;
+        display: none;
+    }
+
+    .dropdown_menu{
+        display: none;
+    }
+
+
+    .dropdown_menu_congreso{
+        position: absolute;
+        top: 7rem;
+        width: 200%;
+        height: 0;
+        background-color: var(--menu-mobile-background-color);
+        backdrop-filter: blur(15px);
+        border-radius: 10px;
+        overflow: hidden;
+        transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 1.5rem;
+    
+        
+        transition: padding .2s;
+    
+    }
+
+
+
+    .dropdown_menu_congreso a{
+        color: var(--text-color-inverse);
+    }
+    
+    
+    .menu .congreso-li:hover .dropdown_menu_congreso{
+        height: unset;
+        padding: 1rem;
+    }
+
+
+
+
+
+
+
+
+    
+
+}
+
+
+@media (min-width:920px){
+
+    a {
+        font-size: 1.4rem;
+    }
+
+
+    .logo img{
+        width: 120px;
+    }
+
+}

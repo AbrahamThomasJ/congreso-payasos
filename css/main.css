@@ -1,0 +1,185 @@
+@font-face{
+    font-family: 'anton';
+    src: url(../font/Anton-Regular.ttf) format('truetype');
+}
+
+@font-face{
+    font-family: 'noto-sans';
+    src: url(../font/NotoSans-Regular.ttf) format('truetype');
+}
+
+
+:root{
+    --theme-color: rgb(255,255,255);
+    --body-background-one: rgb(255,255,255,0.64);
+    --body-background-two: rgb(255,255,255);
+    --background-imgage: linear-gradient(
+        0deg, var(--body-background-one),var(--body-background-two)
+    ),url(../icons/barquisimeto-956.webp);
+
+    --toggle-menu-color: rgb(0, 0, 0);
+
+    --primary-color: #124f88;
+
+    --text-color: rgb(0,0,0);
+
+    --secondary-color: #f7c331;
+    --text-color-inverse: rgb(255,255,255);
+
+
+
+    --navbar-shallow-color: #e5e5e5;
+    --navbar-box-shadow:  0 7px 9px -3px var(--navbar-shallow-color);
+    --menu-mobile-background-color: #3a4460;
+
+    --transition: 0.2 ease-in-out;
+  /*  color-scheme: light;*/;
+
+    --navbar-border: none;
+    --navbar-border-bottom: none;
+    --navbar-border-radius: none;
+
+    --logo-display-light-mode: block;
+    --logo-display-dark-mode: none;
+
+}
+
+:root[data-theme="dark"]{
+        --theme-color: rgb(11,16,43);     
+        --body-background-one: rgb(34,34,34,0.88);
+        --body-background-two: rgb(0,0,0);
+        --background-imgage: linear-gradient(
+            0deg, var(--body-background-one),var(--body-background-two)
+        ),url(../icons/barquisimeto-dark-mode.jpg);
+
+        --toggle-menu-color: rgb(237, 237, 237);
+
+        --text-color: rgb(224,224,224);
+
+        --primary-color: #124f88;
+        --secondary-color: #f7c331;
+        --text-color-inverse: rgb(255,255,255);
+
+        --navbar-shallow-color: #e5e5e5;
+        --navbar-box-shadow: none;
+
+        --menu-mobile-background-color: #3a4460;
+      /*  color-scheme: dark;*/
+
+        --navbar-border: 0px solid transpared 2px solid #141a3c;
+        --navbar-border-bottom: 2px solid #141a3c;
+        --navbar-border-radius: 0px 0px 10px 10px;
+
+        --logo-display-light-mode: none;
+        --logo-display-dark-mode: block;
+
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'noto-sans';
+    transition: color var(--transition), box-shadow var(--transition);
+}
+
+svg{
+    transition: color var(--transition);
+}
+
+
+:root[data-theme="light"] .dark-mode-button{
+    display: none;
+}
+
+:root[data-theme="dark"] .light-mode-button{
+    display: none;
+}
+
+
+
+
+
+body{
+    background-image: var(--background-imgage);
+    background-size: cover;
+    background-attachment: fixed;
+
+    margin: 0;
+    padding: 104px 0 0 0;
+    position: relative;
+    overflow-x: hidden;
+
+    scrollbar-gutter: stable;
+} 
+
+/*SCROLLBAR /// ///// ////// ///// ///// //// ////// ///// ////// ////// ////// //// //////// //////*/
+body::-webkit-scrollbar{
+    width: 14px;
+}
+
+body::-webkit-scrollbar-track{
+    background: hsl(0, 0%, 100%);
+    border-radius: 100vw;
+}
+
+body::-webkit-scrollbar-thumb{
+    background: var(--primary-color);
+    border: .25em solid hsl(0, 0%, 100%);
+    border-radius: 100vw;
+}
+
+body::-webkit-scrollbar-thumb:hover{
+    background: var(--primary-color);
+}
+
+
+
+
+
+
+li {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.horozontal-padding{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.vertical-padding{
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+}
+
+@media(min-width: 400px){
+    body{
+        padding: 140px 0 0 0;
+    }
+}
+
+
+@media(min-width: 950px){
+
+
+    .horozontal-padding{
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+    
+    .vertical-padding{
+        padding-top: 70px;
+        padding-bottom: 70px;
+    
+    }
+
+}

@@ -1,0 +1,770 @@
+.profile-info{
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 70px;
+    position: relative;
+}
+
+
+.profile-shadow-one{
+    position: absolute;
+    top: calc(70% - 50px);
+    left: calc(58% - 50px);
+    width: 46%;
+    height: 63%;
+    background-color: #0084ff47;
+    box-shadow: 0px 1px 200px 92px #0084ff66;
+    border-radius: 26%;
+
+}
+
+.profile-shadow-two{
+    position: absolute;
+    top: calc(18% - 50px);
+    left: calc(24% - 50px);
+    width: 49%;
+    height: 57%;
+    background-color: #ff00002e;
+    box-shadow: 0px 1px 200px 92px #ff000040;
+    border-radius: 26%;
+
+}
+
+.img-logo-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-section-img{
+    width: 80%;
+    max-width: 350px;
+}
+
+.profile{
+    text-align: center;
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 16px;
+}
+
+
+
+.profile-title{
+    font-size: 35px;
+    font-weight: bold;
+    margin: 0;
+    color: var(--primary-color);
+    z-index: 2;
+    
+}
+
+.profile-details{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.3;
+    max-width: 450px;
+    margin: 20px auto;
+}
+
+
+/* DEALER MAIN SECTION ////////// /////////// //////////// ////////// ////////// ///////// //////// */
+
+.dealer-main-section{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dealer-main-section-container{
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+
+}
+
+.dealer-main-section-ul{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 2em;
+    
+
+}
+.dealer-main-section-ul-li{
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    border: 0px solid black;
+    padding: 1em;
+    border-radius: 15px;
+    background: linear-gradient(45deg, #bcc3ff8a, #00ffe31f);
+    box-shadow: -2px 5px 6px 0px #8c8c8c;
+    display: flex;
+    align-items: center;
+}
+.dealer-main-section-ul-li p{
+    width: 60%;
+    margin: 0 auto;
+    text-align: start;
+    font-size: 26px;
+    font-weight: 600;
+
+}
+.dealer-main-section-ul-li p span{
+    color: var(--primary-color);
+}
+        
+.dealer-main-section-container-img{
+    width: 54%;
+}
+
+
+.dealer-main-section-container-img img{
+    width: 100%;
+}
+
+
+/* CONGRESS MAIN ///////// ///////// ////////// ////////// ////////// ///////////// /////////// ///////// ////////// /////// //////////*/
+
+
+.congress-main{
+    width: 100vw;
+
+}
+
+.congress-main-section{
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+}
+
+.representative-biography-and-img-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.representative-img-container{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.representative-img-container img{
+    width: 100%;
+    mask-image: linear-gradient(black 80%, transparent);
+
+}
+
+.representative-img-container img.luis-img{
+    max-width: 400px;
+}
+.representative-img-container img.travis-img{
+    max-width: 500px;
+}
+
+
+
+.representative-biography-container{
+    width: 100%;
+    height: 300px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.why-container, .vision-container{
+    position: relative;
+    margin-bottom: 18%;
+
+}
+
+.vision-container .vision-shadow{
+    position: absolute;
+    top: calc(25% - 50px);
+    left: calc(57% - 50px);
+    width: 46%;
+    height: 63%;
+    background-color: #0084ff26;
+    box-shadow: 0px 1px 200px 92px #0084ff38;
+    border-radius: 26%;
+}
+
+.why-container .why-shadow{
+    position: absolute;
+    top: calc(41% - 50px);
+    left: calc(24% - 50px);
+    width: 49%;
+    height: 57%;
+    background-color: #ff00002e;
+    box-shadow: 0px 1px 200px 92px #ff000040;
+    border-radius: 26%;
+}
+
+
+.congres-main-section-vision-img-mobile{
+    position: absolute;
+    top: calc(102% - 50px);
+    left: calc(61% - 50px);
+    width: 50%;
+    max-width: 254px;
+    filter: grayscale(1);
+    z-index: 4;
+    transform: rotate(30deg);
+    filter: grayscale(1) contrast(0.5) opacity(0.25);
+    
+
+}
+
+.congres-main-section-why-img-mobile{
+    position: absolute;
+    top: calc(102% - 50px);
+    left: calc(61% - 50px);
+    width: 62%;
+    max-width: 386px;
+    z-index: 4;
+    mask-image: linear-gradient(black 80%, transparent);
+ /*   filter: grayscale(1);
+    transform: rotate(30deg);
+    filter: grayscale(1) contrast(0.5) opacity(0.25);*/
+}
+
+
+.representative-biography-container p, .why-container p, .vision-container p{
+    width: 100%;
+    font-weight: bold;
+    font-size: 20px;
+    position: relative;
+    z-index: 15;
+
+}
+
+
+
+.vision-container p span, .why-container h3{
+    color: var(--primary-color);
+    margin-bottom: 24px;
+}
+
+.representative-biography-p-container{
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+
+.representative-biography-p-container p{
+    text-align: justify;
+    line-height: 1.2;
+    word-spacing: -1px;
+    overflow: auto;
+    padding: 0 10px 0 0;
+    height: 75%;
+}
+
+.why-container h3{
+    font-size: 28px;
+}
+
+
+
+.representative-biography-container p.p-name{
+    font-family: 'anton';
+    font-weight: 700;
+    font-size: 28px;
+    letter-spacing: 2px;
+    color: var(--primary-color);
+}
+
+.congress-main-section-p, .congress-main-section-h2{
+    font-family: 'anton';
+    width: 100%;
+    max-width: 990px;
+    text-align: center;
+    font-size: 24px;
+    color: black;
+    margin: 0 auto;
+    font-weight: 700;
+
+}
+
+
+
+.congress-main-section-h2{
+    font-size: 30px;
+}
+
+.congress-main-section-p{
+    margin-top: 60px;
+}
+
+
+.congress-main-section-h2 p, .congress-main-section-p span{
+    color: var(--primary-color);
+
+}
+
+.congress-main-section-h2 p{
+    font-family: 'noto-sans';
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    font-size: 24px;
+    position: relative;
+    width: 90%;
+    max-width: 350px;
+    height: 72px;
+    margin: 0 auto;
+}
+
+.congress-main-section-h2 p span{
+    position: absolute;
+    left: 8px;
+    top: 8px;
+}
+
+.congress-main-section-h2 p img{
+    width: 78%;
+    position: absolute;
+    right: 0;
+}
+
+
+
+.congress-main-section-p span{
+    font-family: 'anton';
+}
+
+
+/*TALLERISTAS MAIN SECTION*/
+
+.talleristas-main{
+    width: 100vw;
+
+}
+
+.talleristas-main-section{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+.talleristas-main-section-ul{
+    list-style: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 30px auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 26px;
+}
+
+.talleristas-main-section-ul-li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    border: 0px solid rgb(247 195 49);
+    padding: 1em;
+    border-radius: 10px;
+    z-index: 2;
+    
+    /*box-shadow: -2px 5px 6px 0px #dcdcdc;*/
+}
+
+.talleristas-main-section-ul-li-img-container{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.talleristas-main-section-ul-li-img{
+    width: 70%;
+    mask-image: linear-gradient(black 80%, transparent);
+
+}
+        
+.talleristas-main-section-ul-li-p-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 110%;
+    height: 250px;
+    border: 0px solid white;
+    padding: 1em;
+    border-radius: 15px;
+    background: linear-gradient(178deg, #ffffff, #ffffff);
+    position: relative;
+}
+                
+.talleristas-main-section-ul-li-p{
+    color: rgb(0, 0, 0);
+    font-weight: 900;
+    text-align: start;
+    overflow: auto;
+    height: 92%;
+    padding: 0 10px;
+    text-align: justify;
+    line-height: 1.2;
+    word-spacing: -1px;
+}
+
+.talleristas-main-section-ul-li-p span{
+    color: var(--primary-color);
+
+}
+
+.talleristas-body-shadow-one{
+    position: fixed;
+    top: calc(20% - 50px);
+    left: calc(65% - 50px);
+    width: 34%;
+    height: 40%;
+    background-color: #0084ff26;
+    box-shadow: 0px 1px 200px 92px #0084ff38;
+    border-radius: 26%;
+}
+
+.talleristas-body-shadow-two{
+    position: fixed;
+    top: calc(65% - 50px);
+    left: calc(5% - 50px);
+    width: 34%;
+    height: 40%;
+    background-color: #ff00001a;
+    box-shadow: 0px 1px 200px 92px #ff000021;
+    border-radius: 26%;
+}
+
+.congress-main-section-talleristas-h2{
+    margin-top: 25px;
+}
+
+.talleristas-main-section-ul-li-social-media-container{
+    list-style: none;
+    position: absolute;
+    bottom: 4%;
+    right: 0%;
+    width: 26%;
+    max-width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background-color: #ffffff;
+    padding: 5px;
+    border-radius: 15px;
+    z-index: 20;
+}
+
+.representative-social-media-container{
+    bottom: 0%;
+    right: 3%;
+}
+
+.talleristas-social-media-li{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.talleristas-main-section-ul-li-social-media-container a{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.talleristas-main-section-ul-li-social-media-container a img{
+    width: 100%;
+}
+
+
+/*MOVILE ////// //////////// ///////// /////// //////// ////////// ///////// ///////// ///////// /////// //////// ////////// ///////// /////// ////////*/
+@media(min-width: 360px){
+    /* CONGRESS MAIN SECTION */
+    .congress-main-section-h2{
+        font-size: 36px;
+    }
+    .congress-main-section-p{
+        font-size: 24px;
+    }
+    .representative-biography-container p, .why-container p, .vision-container p{
+        font-size: 22px;        
+    }
+    .representative-biography-container p.p-name{
+        font-size: 34px;
+    }
+
+
+}
+
+@media(min-width:340px){
+    .congress-main-section-h2 p{
+        margin-top: 10px;
+    }
+
+    .congress-main-section-h2 p span{
+        font-size: 32px;
+    }
+
+    .congress-main-section-h2 p span{
+        left: -2px;
+    }
+
+}
+
+@media(min-width: 400px){
+    /* CONGRESS MAIN SECTION */
+    .congress-main-section-p{
+        font-size: 30px;
+        margin-top: 100px;
+    }
+    .representative-biography-container p, .why-container p, .vision-container p{
+        font-size: 22px;        
+    }
+    .representative-biography-container p.p-name{
+        font-size: 40px;
+    }
+
+    .congress-main-section-h2 p span{
+        left: 8px;
+    }
+
+    .congres-main-section-why-img-mobile{
+        left: calc(54% - 50px);
+    }
+
+    /*TALLERISTAS MAIN SECTION*/
+    .congress-main-section-talleristas-h2{
+        font-size: 43px;
+    }
+
+    .talleristas-main-section-ul-li-p{
+        font-size: 20px;
+    }
+
+
+
+
+}
+
+
+@media(min-width: 700px){
+    /* PRINCIPAL PAGE MAIN SECTION*/
+
+
+
+
+   /*DEALER MAIN SECTION*/
+    .dealer-main-section-container{
+        margin: 45px auto;
+    }
+
+    .dealer-main-section-ul{
+        gap: 80px;
+    }
+    .dealer-main-section-ul-li{
+
+        height: 166px;
+    }
+
+
+    /* CONGRESS MAIN SECTION */
+    .congress-main-section{
+        gap: 80px;
+    }
+
+    .congress-main-section-h2{
+        font-size: 46px;
+    }
+
+    .congress-main-section-p{
+        font-size: 42px;
+    }
+
+    .representative-biography-container p, .why-container p, .vision-container p{
+        font-size: 30px;
+        padding: 0 30px;
+        
+        
+    }
+    .representative-biography-container p.p-name{
+        font-size: 44px;
+        margin-bottom: 12px;
+    }
+
+
+    .why-container h3{
+        font-size: 38px;
+        padding: 0 30px;
+    }
+
+    .congres-main-section-why-img-mobile{
+        top: calc(51% - 50px);
+        top: calc(86% - 50px);
+        
+    }
+
+
+    /* TALLERISTAS MAIN SECTION*/
+    .talleristas-main-section-ul-li{
+        flex-direction: row;
+    }
+
+    .talleristas-main-section-ul-li-img-container{
+        width: 50%;
+    }
+
+    .talleristas-main-section-ul-li-p-container{
+        width: 50%;
+        height: 300px;
+        overflow: auto;
+        padding: 26px;
+    }
+
+    .talleristas-main-section-ul-li-img{
+        width: 100%;
+    }
+
+    .talleristas-main-section-ul-li-p{
+        font-size: 16px;
+        padding: 0 20px;
+    }
+
+
+
+
+
+
+
+}
+
+@media(min-width:800px){
+    .talleristas-main-section-ul-li-p{
+        font-size: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+@media(min-width:950px){
+
+    .profile-info{
+        margin-bottom: 0px;
+        gap: 20px;
+    }
+
+
+
+    .logo-section-img{
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .profile{
+        height: 50vh;
+        text-align: left;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 980px;
+        margin: 30px auto;
+    }
+
+    .profile-title{
+        font-size: 44px;
+    }
+
+    .profile-details{
+        font-size: 25px;
+        margin: 30px 0;
+    }
+
+    .profile-info, .img-logo-section{
+        width: 50vw;
+    }
+
+
+
+    /* DEALER MAIN SECTION*/
+
+    .dealer-main-section-ul-li p{
+        font-size: 36px;
+    }
+
+
+    /* CONGRESS MAIN SECTION*/
+
+
+    .representative-biography-and-img-container{
+        flex-direction: row;
+    }
+
+    .congress-main-section .representative-biography-and-img-container:nth-of-type(2){
+        flex-direction: row-reverse;
+    }
+
+    .why-container p span{
+        font-size: 44px;
+    }
+
+
+    .representative-biography-container{
+        height: 400px;
+    }
+
+
+    /* TALLERISTAS MAIN SECTION*/
+
+    .talleristas-main-section-ul-li-img{
+        width: 60%;
+    }
+
+
+
+
+
+
+ 
+
+}

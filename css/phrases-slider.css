@@ -1,0 +1,50 @@
+main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.phrases-slider-box{
+    width: 600px;
+    height: auto;
+    margin: 50px auto 0;
+    overflow: hidden;
+}
+
+.phrases-slider-box-ul{
+    display: flex;
+    padding: 0;
+    width: 100%;
+    animation: slide 20s linear infinite;
+    position: relative;
+}
+
+.phrases-slider-box-li{
+    width: 100%;
+    list-style: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+
+}
+
+.phrases-slider-box-li-div{
+    width: 100%;
+    position: relative;
+
+}
+
+.phrases-slider-box-text{
+    position: absolute;
+    text-align: center;
+    padding: 0 250px;
+    top: 250px;
+    color: #ffffff;
+}
+
+.phrases-slider-box img{
+    width: 100%;
+}
