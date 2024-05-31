@@ -293,7 +293,7 @@
 
 
 .representative-biography-container p.p-name{
-    font-family: 'anton';
+
     font-weight: 700;
     font-size: 28px;
     letter-spacing: 2px;
@@ -301,7 +301,7 @@
 }
 
 .congress-main-section-p, .congress-main-section-h2{
-    font-family: 'anton';
+
     width: 100%;
     max-width: 990px;
     text-align: center;

@@ -1,16 +1,19 @@
 @font-face{
     font-family: 'anton';
     src: url(../font/Anton-Regular.ttf) format('truetype');
+    font-display: swap;
 }
 
 @font-face{
     font-family: 'noto-sans';
     src: url(../font/NotoSans-Regular.ttf) format('truetype');
+    font-display: swap;
 }
 
 @font-face{
     font-family: 'Edutas';
     src: url(../font/EduTASBeginner-Regular.ttf) format('truetype');
+    font-display: swap;
 }
 
 :root{
@@ -84,7 +87,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'noto-sans';
     transition: color var(--transition), box-shadow var(--transition);
 }
 
@@ -116,7 +118,32 @@ body{
     overflow-x: hidden;
 
     scrollbar-gutter: stable;
+
+    font-family: 'noto-sans', sans-serif;
 } 
+
+body.fonts-loaded-noto{
+    font-family: 'noto-sans', sans-serif;
+}
+
+.representative-biography-container.fonts-loaded-anton{
+    font-family: 'anton', sans-serif;
+}
+
+.congress-main-section-p.fonts-loaded-anton{
+    font-family: 'anton', sans-serif;
+}
+
+.congress-main-section-h2.fonts-loaded-anton{
+    font-family: 'anton', sans-serif;
+}
+
+.box-phrases-son-container.fonts-loaded-edutas{
+    font-family: 'Edutas', sans-serif;
+}
+
+
+
 
 /*SCROLLBAR /// ///// ////// ///// ///// //// ////// ///// ////// ////// ////// //// //////// //////*/
 body::-webkit-scrollbar{
