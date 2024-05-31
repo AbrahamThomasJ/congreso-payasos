@@ -40,20 +40,16 @@
 }
 
 .box-phrases-son-container p{
+    font-family: 'Edutas';
     font-size: 20px;
     color: rgb(255,255,255);
     position: relative;
     z-index: 2;
     padding: 10px;
-}
-
-.box-phrases-son-p-phrase{
 
 }
 
-.box-phrases-son-p-name{
 
-}
 
 
 .one{

@@ -8,6 +8,10 @@
     src: url(../font/NotoSans-Regular.ttf) format('truetype');
 }
 
+@font-face{
+    font-family: 'Edutas';
+    src: url(../font/EduTASBeginner-Regular.ttf) format('truetype');
+}
 
 :root{
     --theme-color: rgb(255,255,255);
