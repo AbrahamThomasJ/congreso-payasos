@@ -54,11 +54,12 @@
 
 
 .profile-title{
-    font-size: 35px;
+    font-size: 28px;
     font-weight: bold;
     margin: 0;
     color: var(--primary-color);
     z-index: 2;
+    padding: 0 1em;
     
 }
 
