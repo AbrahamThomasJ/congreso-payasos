@@ -122,17 +122,23 @@ body{
     font-family: 'noto-sans', sans-serif;
 } 
 
-body.fonts-loaded-noto{
+body{
     font-family: 'noto-sans', sans-serif;
 }
 
-.representative-biography-container.fonts-loaded-anton,
-.congress-main-section-h2.fonts-loaded-anton,
-.congress-main-section-p.fonts-loaded-anton {
+.congress-main-section-h2{
     font-family: 'anton', sans-serif;
 }
 
-.box-phrases-son-container.fonts-loaded-edutas{
+.congress-main-section-p{
+    font-family: 'anton', sans-serif;
+}
+
+.representative-biography-container p.p-name{
+    font-family: 'anton', sans-serif;
+}
+
+.box-phrases-son-container{
     font-family: 'edutas', sans-serif;
 }
 
