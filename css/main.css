@@ -11,7 +11,7 @@
 }
 
 @font-face{
-    font-family: 'Edutas';
+    font-family: 'edutas';
     src: url(../font/EduTASBeginner-Regular.ttf) format('truetype');
     font-display: swap;
 }
@@ -126,20 +126,14 @@ body.fonts-loaded-noto{
     font-family: 'noto-sans', sans-serif;
 }
 
-.representative-biography-container.fonts-loaded-anton{
-    font-family: 'anton', sans-serif;
-}
-
-.congress-main-section-p.fonts-loaded-anton{
-    font-family: 'anton', sans-serif;
-}
-
-.congress-main-section-h2.fonts-loaded-anton{
+.representative-biography-container.fonts-loaded-anton,
+.congress-main-section-h2.fonts-loaded-anton,
+.congress-main-section-p.fonts-loaded-anton {
     font-family: 'anton', sans-serif;
 }
 
 .box-phrases-son-container.fonts-loaded-edutas{
-    font-family: 'Edutas', sans-serif;
+    font-family: 'edutas', sans-serif;
 }
 
 
