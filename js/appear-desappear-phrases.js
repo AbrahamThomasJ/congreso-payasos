@@ -24,10 +24,8 @@ function alternateShowing(){
 function handleVisibilityChange(){
     if(document.hidden){
         clearTimeout(timeoutId); // Stop function when page is not visible
-        console.log('Page hidden, aniation stopped');
     } else {
         alternateShowing(); // Resume function
-        console.log('Page visible, animation resumed');
     }
 }
 
