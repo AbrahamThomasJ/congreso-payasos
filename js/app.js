@@ -31,8 +31,21 @@ function toggleOpenCloseImgs(){
 }
 
 
-toggleBtn.addEventListener('click', function(){
+toggleBtn.addEventListener('click', function(event){
+    event.stopPropagation();
     openMenu();
     toggleOpenCloseImgs();
 
 });
+
+
+function closeMenu(event){
+    if(!dropDownMenu.contains(event.target) && !toggleBtn.contains(event.target)){
+        if(dropDownMenu.classList.contains('openMenu')){
+            openMenu();
+            toggleOpenCloseImgs();
+        }
+    }
+}
+
+document.addEventListener('click',closeMenu);
