@@ -4,6 +4,7 @@
 
 .logo img{
     width: 98px;
+    aspect-ratio: 1 / 0.85;
 }
 
 

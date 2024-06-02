@@ -42,6 +42,7 @@
 .logo-section-img{
     width: 80%;
     max-width: 350px;
+    aspect-ratio: 1/0.85846;
 }
 
 .profile{
@@ -126,6 +127,7 @@
         
 .dealer-main-section-container-img{
     width: 54%;
+    aspect-ratio: 1/0.8;
 }
 
 
@@ -176,9 +178,11 @@
 
 .representative-img-container img.luis-img{
     max-width: 400px;
+    aspect-ratio: 1/1.449;
 }
 .representative-img-container img.travis-img{
     max-width: 500px;
+    aspect-ratio: 1/1;
 }
 
 
@@ -406,6 +410,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    aspect-ratio: 1/0.5;
 
 }
 
